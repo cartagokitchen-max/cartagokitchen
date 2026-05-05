@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartago Kitchen | منتجات خشب الزيتون الفاخرة</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنبيه العلوي -->
+    <div class="top-bar">
+        <p>🫒 منتجات خشب الزيتون الطبيعي 100% | توصيل عالمي متاح</p>
+    </div>
+
+    <!-- الهيدر والتنقل -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://images.unsplash.com/photo-1474979266404-7caddbed64a5?w=60&h=60&fit=crop" alt="Cartago Kitchen">
+                <div class="logo-text">
+                    <h1>Cartago Kitchen</h1>
+                    <span>فنون خشب الزيتون</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="active">الرئيسية</a>
+                <a href="#products">منتجاتنا</a>
+                <a href="#about">من نحن</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/21600000000" class="whatsapp-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>واتساب</span>
+                </a>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">🫒 بالجملة والتجزئة</span>
+            <h2>منتجات خشب الزيتون<br><span class="highlight">الطبيعية الفاخرة</span></h2>
+            <p>صناعة يدوية تقليدية من أجود أنواع خشب الزيتون. أدوات مطبخ، ديكور، وهدايا فاخرة تدوم العمر.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-primary">استعرض المنتجات</a>
+                <a href="#contact" class="btn-secondary">اطلب عرض سعر</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">عميل سعيد</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">منتج متنوع</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">سنة خبرة</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- المميزات -->
+    <section class="features">
+        <div class="container">
+            <div class="feature-card">
+                <div class="feature-icon">🌿</div>
+                <h3>100% طبيعي</h3>
+                <p>خشب زيتون أصلي بدون مواد كيميائية</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✋</div>
+                <h3>صناعة يدوية</h3>
+                <p>نحت يدوي دقيق من حرفيين متمرسين</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>شحن عالمي</h3>
+                <p>نوصل منتجاتك لأي مكان في العالم</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏷️</div>
+                <h3>أسعار الجملة</h3>
+                <p>عروض مميزة للطلبات الكبيرة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- المنتجات -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">منتجاتنا</span>
+                <h2>اكتشف تشكيلتنا الفاخرة</h2>
+                <p>كل قطعة فريدة بفعل طبيعة الخشب</p>
+            </div>
+
+            <div class="product-tabs">
+                <button class="tab-btn active" data-category="all">الكل</button>
+                <button class="tab-btn" data-category="kitchen">أدوات المطبخ</button>
+                <button class="tab-btn" data-category="decor">الديكور</button>
+                <button class="tab-btn" data-category="gifts">الهدايا</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- منتج 1 -->
+                <div class="product-card" data-category="kitchen">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=400&h=400&fit=crop" alt="لوح تقطيع">
+                        <div class="product-overlay">
+                            <button class="view-btn" onclick="showProductDetails('لوح تقطيع خشب زيتون', 'لوح تقطيع كبير مصنوع يدوياً من خشب الزيتون الطبيعي. مقاوم للبكتيريا وآمن للاستخدام اليومي.')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="product-badge">الأكثر مبيعاً</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">أدوات المطبخ</span>
+                        <h3>لوح تقطيع خشب زيتون</h3>
+                        <p>مقاسات متعددة | صناعة يدوية</p>
+                        <div class="product-footer">
+                            <a href="#contact" class="price-btn">اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منتج 2 -->
+                <div class="product-card" data-category="kitchen">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590794056226-79ef3a8147e1?w=400&h=400&fit=crop" alt="أطباق خشبية">
+                        <div class="product-overlay">
+                            <button class="view-btn" onclick="showProductDetails('أطباق تقديم خشبية', 'أطباق تقديم أنيقة مصنوعة من خشب الزيتون. مثالية للمكسرات والزيتون والمقبلات.')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">أدوات المطبخ</span>
+                        <h3>أطباق تقديم خشبية</h3>
+                        <p>تصاميم متنوعة | طلاء طبيعي</p>
+                        <div class="product-footer">
+                            <a href="#contact" class="price-btn">اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منتج 3 -->
+                <div class="product-card" data-category="kitchen">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop" alt="ملاعق خشبية">
+                        <div class="product-overlay">
+                            <button class="view-btn" onclick="showProductDetails('ملاعق خشبية', 'ملاعق طبخ وتقديم مصنوعة من خشب الزيتون. خفيفة الوزن وآمنة على الأواني غير اللاصقة.')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">أدوات المطبخ</span>
+                        <h3>ملاعق خشبية</h3>
+                        <p>مجموعة متكاملة | مقاومة للحرارة</p>
+                        <div class="product-footer">
+                            <a href="#contact" class="price-btn">اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منتج 4 -->
+                <div class="product-card" data-category="decor">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop" alt="صندوق خشبي">
+                        <div class="product-overlay">
+                            <button class="view-btn" onclick="showProductDetails('صناديق خشبية مزخرفة', 'صناديق تخزين وأدوات زينة مصنوعة من خشب الزيتون. يمكن تخصيصها بالنقش حسب الطلب.')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="product-badge">جديد</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">ديكور</span>
+                        <h3>صناديق خشبية مزخرفة</h3>
+                        <p>قابلة للتخصيص | نقش بالليزر</p>
+                        <div class="product-footer">
+                            <a href="#contact" class="price-btn">اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منتج 5 -->
+                <div class="product-card" data-category="decor">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=400&h=400&fit=crop" alt="إطارات خشبية">
+                        <div class="product-overlay">
+                            <button class="view-btn" onclick="showProductDetails('إطارات صور خشبية', 'إطارات صور فاخرة من خشب الزيتون الطبيعي. تضيف لمسة دافئة لأي مكان.')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">ديكور</span>
+                        <h3>إطارات صور خشبية</h3>
+                        <p>مقاسات متعددة | تصميم كلاسيكي</p>
+                        <div class="product-footer">
+                            <a href="#contact" class="price-btn">اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- منتج 6 -->
+                <div class="product-card" data-category="gifts">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400&h=400&fit=crop" alt="طقم هدايا">
+                        <div class="product-overlay">
+                            <button class="view-btn" onclick="showProductDetails('طقم هدايا فاخر', 'طقم هدايا مكون من لوح تقطيع + أطباق + ملاعق في صندوق خشبي فاخر. هدية مثالية للمناسبات.')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <span class="product-badge">الأكثر طلباً</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">هدايا</span>
+                        <h3>طقم هدايا فاخر</h3>
+                        <p>تغليف فاخر | تخصيص متاح</p>
+                        <div class="product-footer">
+                            <a href="#contact" class="price-btn">اطلب السعر</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- من نحن -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=600&h=500&fit=crop" alt="ورشة عمل">
+                    <div class="experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-text">سنة خبرة</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">من نحن</span>
+                    <h2>قصة خشب الزيتون</h2>
+                    <p>في <strong>Cartago Kitchen</strong>، نؤمن بأن الجمال يكمن في البساطة. نختار بعناية أجود أخشاب الزيتون ونحولها بأيدي حرفيين متمرسين إلى قطع فنية عملية.</p>
+                    <p>كل قطعة تحكي قصة شجرة زيتون عمرها عشرات السنين. نحن لا نصنع منتجات فحسب، بل نصنع تراثاً يُورث من جيل لآخر.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>خشب زيتون طبيعي 100%</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>صناعة يدوية تقليدية</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>شحن لجميع أنحاء العالم</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>تخصيص حسب الطلب</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تواصل معنا -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">تواصل معنا</span>
+                <h2>اطلب عرض سعر مخصص</h2>
+                <p>نحن هنا لمساعدتك في اختيار المنتجات المناسبة لعملك</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>واتساب</h3>
+                            <p>تواصل مباشر وسريع</p>
+                            <a href="https://wa.me/21600000000" target="_blank" class="contact-link">راسلنا الآن</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@cartagokitchen.com</p>
+                            <a href="mailto:info@cartagokitchen.com" class="contact-link">أرسل بريداً</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الهاتف</h3>
+                            <p>+216 XX XXX XXX</p>
+                            <span class="contact-note">متاح من الأحد إلى الخميس</span>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الموقع</h3>
+                            <p>تونس - صفاقس</p>
+                            <span class="contact-note">شحن لجميع أنحاء العالم</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>نموذج الطلب</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>الاسم الكامل *</label>
+                                <input type="text" name="name" required placeholder="أدخل اسمك">
+                            </div>
+                            <div class="form-group">
+                                <label>اسم الشركة</label>
+                                <input type="text" name="company" placeholder="اسم شركتك (اختياري)">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>البريد الإلكتروني *</label>
+                                <input type="email" name="email" required placeholder="example@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label>رقم الهاتف *</label>
+                                <input type="tel" name="phone" required placeholder="+216 XX XXX XXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>نوع الطلب *</label>
+                            <select name="order_type" required>
+                                <option value="">اختر نوع الطلب</option>
+                                <option value="wholesale">بالجملة</option>
+                                <option value="retail">بالتجزئة</option>
+                                <option value="custom">تخصيص خاص</option>
+                                <option value="sample">طلب عينة</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>المنتجات المطلوبة</label>
+                            <textarea name="products" rows="3" placeholder="اذكر المنتجات والكميات المطلوبة..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>ملاحظات إضافية</label>
+                            <textarea name="message" rows="3" placeholder="أي تفاصيل إضافية..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الطلب
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="https://images.unsplash.com/photo-1474979266404-7caddbed64a5?w=50&h=50&fit=crop" alt="Cartago Kitchen">
+                        <div class="logo-text">
+                            <h3>Cartago Kitchen</h3>
+                            <span>فنون خشب الزيتون</span>
+                        </div>
+                    </div>
+                    <p>نصنع الجمال من طبيعة الزيتون. منتجات فاخرة تدوم العمر.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/21600000000"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <a href="#home">الرئيسية</a>
+                    <a href="#products">منتجاتنا</a>
+                    <a href="#about">من نحن</a>
+                    <a href="#contact">تواصل معنا</a>
+                </div>
+                <div class="footer-links">
+                    <h4>المنتجات</h4>
+                    <a href="#products">أدوات المطبخ</a>
+                    <a href="#products">الديكور</a>
+                    <a href="#products">الهدايا</a>
+                    <a href="#contact">طلبات مخصصة</a>
+                </div>
+                <div class="footer-links">
+                    <h4>تواصل</h4>
+                    <p><i class="fas fa-envelope"></i> info@cartagokitchen.com</p>
+                    <p><i class="fas fa-phone"></i> +216 XX XXX XXX</p>
+                    <p><i class="fas fa-map-marker-alt"></i> تونس - صفاقس</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Cartago Kitchen. جميع الحقوق محفوظة.</p>
+                <p>صنع بـ ❤️ من خشب الزيتون</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- نافذة تفاصيل المنتج -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+            <a href="#contact" class="btn-primary" onclick="closeModal()">اطلب هذا المنتج</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
